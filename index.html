@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Lasha Chargaziia — Economics</title>
+<meta name="description" content="Lasha Chargaziia. PhD candidate and Junior Economist at the ifo Institute and LMU Munich. Political economy and migration economics." />
+<meta property="og:title" content="Lasha Chargaziia" />
+<meta property="og:description" content="Political economy and migration economics." />
+<meta property="og:type" content="website" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%2378182B'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' fill='%23FAFAF7' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --paper:#FAFAF7;
+    --paper-2:#F1F0EA;
+    --ink:#17181C;
+    --muted:#5B606A;
+    --faint:#8B8F98;
+    --rule:#E4E1D8;
+    --accent:#78182B;
+    --accent-2:#9B2A3C;
+    --maxw:760px;
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  a{color:var(--accent);text-decoration:none;text-underline-offset:2px}
+  a:hover{color:var(--accent-2);text-decoration:underline}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+
+  .nav{
+    position:sticky;top:0;z-index:20;
+    background:color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter:saturate(1.4) blur(8px);
+    border-bottom:1px solid var(--rule);
+  }
+  .nav-inner{
+    max-width:var(--maxw);margin:0 auto;padding:13px 28px;
+    display:flex;align-items:baseline;justify-content:space-between;gap:18px;
+  }
+  .nav-name{
+    font-family:"IBM Plex Serif",serif;font-weight:600;font-size:16px;
+    letter-spacing:.01em;color:var(--ink);white-space:nowrap;
+  }
+  .nav-links{display:flex;gap:19px;font-family:"IBM Plex Mono",monospace;
+    font-size:12.5px;letter-spacing:.02em}
+  .nav-links a{color:var(--muted)}
+  .nav-links a:hover{color:var(--accent);text-decoration:none}
+  @media (max-width:620px){.nav-links{display:none}}
+
+  header.hero{padding:74px 0 8px}
+  .hero-grid{display:flex;gap:38px;align-items:flex-start}
+  .hero-text{flex:1;min-width:0}
+  .eyebrow{
+    font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
+    margin:0 0 16px;
+  }
+  h1.name{
+    font-family:"IBM Plex Serif",serif;font-weight:600;
+    font-size:clamp(38px,6.4vw,54px);line-height:1.02;letter-spacing:-.015em;
+    margin:0 0 16px;
+  }
+  .role{font-size:18px;color:var(--muted);margin:0 0 22px;max-width:52ch}
+  .role strong{color:var(--ink);font-weight:600}
+  .tags{
+    font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--faint);
+    letter-spacing:.01em;margin:0 0 26px;
+  }
+  .tags span{color:var(--muted)}
+  .tags i{color:var(--rule);font-style:normal;padding:0 7px}
+
+  .links{display:flex;flex-wrap:wrap;gap:10px}
+  .links a{
+    font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.02em;
+    color:var(--ink);border:1px solid var(--rule);border-radius:999px;
+    padding:6px 14px;background:#fff;transition:border-color .15s,color .15s;
+  }
+  .links a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+
+  .portrait{
+    flex:0 0 128px;width:256px;height:296px;border-radius:4px;object-fit:cover;
+    background:var(--paper-2);border:1px solid var(--rule);
+    filter:grayscale(.12);
+  }
+  @media (max-width:600px){
+    header.hero{padding:52px 0 4px}
+    .hero-grid{flex-direction:column-reverse;gap:22px}
+    .portrait{width:104px;height:128px;flex-basis:auto}
+  }
+
+  section{padding:44px 0;border-top:1px solid var(--rule);margin-top:40px}
+  section:first-of-type{border-top:none;margin-top:12px}
+  .sec-label{
+    font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--faint);
+    margin:0 0 6px;
+  }
+  h2{font-family:"IBM Plex Serif",serif;font-weight:600;font-size:25px;
+    letter-spacing:-.01em;margin:0 0 26px}
+  h3.sub{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:12.5px;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--accent);
+    margin:34px 0 16px}
+  h3.sub:first-of-type{margin-top:0}
+
+  .lede{font-size:17.5px;color:var(--muted);max-width:64ch}
+  .lede a{font-weight:500}
+
+  .entry{padding:18px 0 18px 20px;border-left:2px solid var(--rule);
+    margin-bottom:6px;transition:border-color .18s}
+  .entry:hover{border-left-color:var(--accent)}
+  .entry .flag{
+    display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+    letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--accent);
+    padding:2px 8px;border-radius:3px;margin-bottom:9px;
+  }
+  .entry .flag.soft{background:none;color:var(--faint);border:1px solid var(--rule);padding:1px 7px}
+  .entry .title{font-weight:600;font-size:17px;line-height:1.4;margin:0 0 3px;color:var(--ink)}
+  .entry .authors{font-size:14.5px;color:var(--muted);margin:0 0 3px}
+  .entry .authors em{font-style:normal;color:var(--ink);font-weight:500;border-bottom:1.5px solid var(--rule)}
+  .entry .venue{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--faint);margin:0 0 9px}
+  .entry .venue b{color:var(--accent);font-weight:500}
+  .entry .desc{font-size:15px;color:var(--muted);margin:0 0 10px;max-width:62ch}
+  .entry .meta-links{display:flex;flex-wrap:wrap;gap:7px}
+  .entry .meta-links a{
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.03em;
+    color:var(--muted);border:1px solid var(--rule);border-radius:3px;padding:2px 9px;
+  }
+  .entry .meta-links a:hover{color:var(--accent);border-color:var(--accent);text-decoration:none}
+
+  .row{padding:15px 0;border-bottom:1px solid var(--rule)}
+  .row:last-child{border-bottom:none}
+  .row .rt{font-weight:600;font-size:16px}
+  .row .rm{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--faint);margin-top:2px}
+
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;margin-top:4px}
+  @media (max-width:560px){.contact-grid{grid-template-columns:1fr}}
+  .contact-grid .k{font-family:"IBM Plex Mono",monospace;font-size:11.5px;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:4px}
+  .contact-grid .v{font-size:16px}
+
+  footer{border-top:1px solid var(--rule);margin-top:52px;padding:30px 0 60px}
+  footer .fn{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--faint);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  footer a{color:var(--faint)}
+
+  .js-reveal .reveal{opacity:0;transform:translateY(10px)}
+  .js-reveal .reveal.in{opacity:1;transform:none;transition:opacity .6s ease,transform .6s ease}
+  @media (prefers-reduced-motion:reduce){
+    .js-reveal .reveal{opacity:1;transform:none}
+  }
+
+  @media print{
+    .nav,.links,footer{display:none}
+    body{font-size:11pt}
+    section{border-top:1px solid #ccc}
+    a{color:#000;text-decoration:none}
+  }
+</style>
+</head>
+
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-name">Lasha Chargaziia</span>
+    <div class="nav-links">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#software">Software</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow reveal">ifo Institute / LMU Munich</p>
+        <h1 class="name reveal">Lasha Chargaziia</h1>
+        <p class="role reveal">
+          PhD candidate in economics and Junior Economist at the ifo Institute and LMU Munich. 
+          Using causal inference and large-scale computational methods, I study institutions, 
+          discrimination, and the decisions of displaced populations, with a regional focus on 
+          the post-Soviet space.
+        </p>
+        <p class="tags reveal">
+          <span>political economy</span><i>·</i><span>migration economics</span><i>·</i><span>survey experiments</span>
+        </p>
+        <div class="links reveal">
+          <a href="cv.pdf">CV (PDF)</a>
+          <a href="https://scholar.google.com/citations?user=EI7mNooAAAAJ&hl=en">Google Scholar</a>
+          <a href="https://github.com/feelingsdotcfg">GitHub</a>
+          <a href="https://www.linkedin.com/in/lasha-chargaziia/">LinkedIn</a>
+        </div>
+      </div>
+      <img class="portrait reveal" src="profile.jpg" alt="Lasha Chargaziia"
+           onerror="this.style.display='none'" />
+    </div>
+  </header>
+
+  <section id="research">
+    <h3 class="sub">Job market paper</h3>
+    <div class="entry reveal">
+      <p class="title">Ethnic Favoritism in Authoritarian Courts</p>
+      <p class="authors"><em>Lasha Chargaziia</em></p>
+      <p class="venue"><b>draft available on request</b></p>
+      <p class="desc">
+        Exploits a 2019 reform in Russia that randomized the assignment of cases to judges to
+        identify ethnic favoritism in sentencing. I combine a dataset of over two million
+        scraped criminal verdicts with a machine-learning classifier that infers defendant
+        ethnicity from names and study how ethnicity of both defendants and judges
+        shapes conviction and sentencing.
+      </p>
+    </div>
+
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <h3 class="sub">Published</h3>
+    <div class="entry reveal">
+      <p class="title">Refugees from Ukraine value job opportunities over welfare</p>
+      <p class="authors">Joop Adema, <em>Lasha Chargaziia</em>, Yvonne Giesing, Panu Poutvaara</p>
+      <p class="venue"><b>Proceedings of the National Academy of Sciences (PNAS)</b> &#183; 2025</p>
+      <div class="meta-links"><a href="https://doi.org/10.1073/pnas.2502420122">DOI</a><a href="#">PDF</a></div>
+    </div>
+
+    <h3 class="sub">Revise and resubmit</h3>
+    <div class="entry reveal">
+      <p class="title">Drivers of post-conflict return intentions among Ukrainian refugees</p>
+      <p class="authors">Joop Adema, <em>Lasha Chargaziia</em>, Yvonne Giesing, Panu Poutvaara, 
+      Sarah Necker</p>
+      <p class="venue"><b>Nature Human Behaviour</b></p>
+      <div class="meta-links"><a href="https://www.econstor.eu/bitstream/10419/331584/1/cesifo1_wp12118.pdf">CESifo Working Paper</a></div>
+    </div>
+  </section>
+
+    <h2>Work in progress</h2>
+    
+    <div class="entry reveal">
+      <span class="flag soft">In progress</span>
+      <p class="title">Zero-Sum Thinking and Support for Military Spending</p>
+      <p class="authors">David Karpa, Michael Rochlitz, <em>Lasha Chargaziia</em></p>
+      <p class="venue">Working paper</p>
+      <p class="desc">
+        A survey experiment testing whether zero-sum beliefs shape support for military aid to 
+        Ukraine in Germany.
+      </p>
+    </div>
+    
+    <div class="entry reveal">
+      <span class="flag soft">In progress</span>
+      <p class="title">Public Opinion in Wartime Russia: Internet Restrictions, Repression, and Support for the War</p>
+      <p class="authors"><em>Lasha Chargaziia</em>, Timothy Frye, David Karpa, Andrey Tkachenko</p>
+      <p class="desc">
+        A conjoint experiment on voter preferences over State Duma candidates in Russia,
+        fielded to probe how policy stances are weighed under authoritarian wartime conditions.
+      </p>
+    </div>
+    
+    <div class="entry reveal">
+      <span class="flag soft">In progress</span>
+      <p class="title">Policies to Incentivize Ukrainian Refugees to Return</p>
+      <p class="authors"><em>Lasha Chargaziia</em>, Yvonne Giesing, Gabriele Gurrieri,
+      Yuliya Kosyakova, Panu Poutvaara, Sebastian Schirner, Kerstin Tanis, Hannah Vakhitova,
+      Volodymyr Vakhitov, Nataliia Zaika, Sabine Zinn</p>
+      <p class="desc">
+        A large international coorepation involving five concurrent surveys of Ukrainians: both in
+        Europe and in Ukraine.
+      </p>
+    </div>
+
+  </section>
+
+  <section id="software">
+    <p class="sec-label">Software</p>
+    <h2>Open-source tools</h2>
+    <div class="entry reveal">
+      <p class="title">femme &#183; R package</p>
+      <p class="desc">
+        Tools for analyzing conjoint survey experiments: AMCE with respondent fixed effects,
+        marginal means, LASSO-based scenario prediction. Built to extend standard conjoint workflows toward
+        predictive questions. To be published upon acceptance.
+      </p>
+      <div class="meta-links">
+        <a href="linktoadd">GitHub</a><a href="linktoadd">Documentation</a>
+      </div>
+    </div>
+  </section>
+  
+  <section id="teaching">
+    <p class="sec-label">Teaching</p>
+    <h2>Teaching</h2>
+    <div class="row">
+      <div class="rt">Causes and Consequences of Migration</div>
+      <div class="rm">Teaching Assistant to Panu Poutvaara &#183; LMU Munich</div>
+    </div>
+    <div class="row">
+      <div class="rt">Modern Political Science</div>
+      <div class="rm">Teaching Assistant to Israel Marques II &#183; HSE</div>
+    </div>
+    <div class="row">
+      <div class="rt">Social Capital</div>
+      <div class="rm">Teaching Assistant to Ekaterina Borisova &#183; HSE</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="sec-label">Contact</p>
+    <h2>Get in touch</h2>
+    <div class="contact-grid">
+      <div>
+        <div class="k">Email</div>
+        <div class="v"><a href="mailto:chargaziia@ifo.de">chargaziia@ifo.de</a></div>
+      </div>
+      <div>
+        <div class="k">Affiliation</div>
+        <div class="v">ifo Institute and LMU Munich</div>
+      </div>
+      <div>
+        <div class="k">Elsewhere</div>
+        <div class="v">
+          <a href="https://scholar.google.com/citations?user=EI7mNooAAAAJ&hl=en">Scholar</a> &#183;
+          <a href="https://github.com/feelingsdotcfg">GitHub</a> &#183;
+          <a href="https://www.linkedin.com/in/lasha-chargaziia/">LinkedIn</a>
+        </div>
+      </div>
+      <div>
+        <div class="k">CV</div>
+        <div class="v"><a href="cv.pdf">Download (PDF)</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="fn">
+      <span>&#169; <span id="yr"></span> Lasha Chargaziia</span>
+      <span>Hosted on GitHub Pages</span>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  var reduce = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if (!reduce) {
+    document.body.classList.add('js-reveal');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:0.08});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  }
+</script>
+</body>
+</html>
